@@ -1,0 +1,56 @@
+[
+        {
+            "id": 1,
+            "name": "Unnamed",
+            "colorName": "Orange",
+            "difficulty": "Medium",
+            "setter": "Jaden",
+            "isSet": true,
+            "imageName": "unnamed"
+        },
+        {
+            "id": 2,
+            "name": "Purple People Eater",
+            "colorName": "Purple",
+            "difficulty": "Hard",
+            "setter": "Jaden",
+            "isSet": true,
+            "imageName": "purplepeopleeater"
+        },
+        {
+            "id": 3,
+            "name": "N/A",
+            "colorName": "Gray",
+            "difficulty": "N/A",
+            "setter": "N/A",
+            "isSet": false,
+            "imageName": "empty"
+        },
+        {
+            "id": 4,
+            "name": "N/A",
+            "colorName": "Gray",
+            "difficulty": "N/A",
+            "setter": "N/A",
+            "isSet": false,
+            "imageName": "empty"
+        },
+        {
+            "id": 5,
+            "name": "Clifford 2.0",
+            "colorName": "Pink",
+            "difficulty": "Easy",
+            "setter": "Aiden",
+            "isSet": true,
+            "imageName": "clifford2"
+        },
+        {
+            "id": 6,
+            "name": "When life gives You Lemons",
+            "colorName": "Yellow",
+            "difficulty": "Easy",
+            "setter": "Aiden",
+            "isSet": true,
+            "imageName": "lemons"
+        }
+]
