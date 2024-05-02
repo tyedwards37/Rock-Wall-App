@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
         @State private var isShowingProfilePopup = false
         @State private var selection = 2
-        let user = Profile(name: "John Doe", chapmanID: 2399564, email: "john@chapman.edu", isSetter: false, username: "jDude", password: "iluvclimbing", imageName: "user")
+        let user = Profile(id: 1, name: "John Doe", chapmanID: 2399564, email: "john@chapman.edu", isSetter: false, username: "jDude", password: "iluvclimbing", imageName: "user")
         
         var body: some View {
             NavigationView {
@@ -19,22 +19,22 @@ struct HomeView: View {
                         TabView(selection: $selection) {
                             CheckInOutView()
                                 .tabItem {
+                                    Image(systemName: "checklist")
                                     Text("Check In/Out")
-                                        .font(.largeTitle)
                                 }
                                 .tag(1)
 
                             ManageClimbsView()
                                 .tabItem {
+                                    Image(systemName: "figure.climbing")
                                     Text("Manage Climbs")
-                                        .font(.largeTitle)
                                 }
                                 .tag(2)
 
                             RopeLogView()
                                 .tabItem {
+                                    Image(systemName: "list.number")
                                     Text("Rope Log")
-                                        .font(.largeTitle)
                                 }
                                 .tag(3)
                         }

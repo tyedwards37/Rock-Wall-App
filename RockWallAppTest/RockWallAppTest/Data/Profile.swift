@@ -8,15 +8,16 @@
 import Foundation
 import SwiftUI
 
-struct Profile {
-    let name: String
-    let chapmanID: Int
-    let email: String
-    let isSetter: Bool
-    let username: String
-    let password: String
+struct Profile: Hashable, Codable, Identifiable {
+    var id: Int
+    var name: String
+    var chapmanID: Int
+    var email: String
+    var isSetter: Bool
+    var username: String
+    var password: String
     
-    let imageName: String
+    var imageName: String
     var image: Image {
         Image(imageName)
     }

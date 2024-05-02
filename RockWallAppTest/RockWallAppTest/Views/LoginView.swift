@@ -84,5 +84,5 @@ struct LoginView: View {
 }
 
 #Preview {
-    LoginView(user: Profile(name: "John Doe", chapmanID: 2399564, email: "john@chapman.edu", isSetter: false, username: "jDude", password: "iluvclimbing", imageName: "user"))
+    LoginView(user: Profile(id: 1, name: "John Doe", chapmanID: 2399564, email: "john@chapman.edu", isSetter: false, username: "jDude", password: "iluvclimbing", imageName: "user"))
 }
