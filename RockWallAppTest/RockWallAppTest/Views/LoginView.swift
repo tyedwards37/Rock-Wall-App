@@ -50,7 +50,7 @@ struct LoginView: View {
                 Button(action: {
                     if username == user.username && password == user.password {
                         alertMessage = "Login Successful"
-                        isLoggedIn = true
+                        isLoggedIn.toggle()
                     } else {
                         alertMessage = "Login Failed"
                     }
@@ -71,13 +71,11 @@ struct LoginView: View {
                 Spacer()
             }
             .padding()
-            .navigationBarHidden(isLoggedIn)
             .background(
                 NavigationLink(
                 destination: HomeView(),
-                isActive: $isLoggedIn,
-                label: { EmptyView() }
-                )
+                isActive: $isLoggedIn)
+                { EmptyView() }
             )
         }
     }

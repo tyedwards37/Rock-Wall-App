@@ -28,6 +28,9 @@
 		AEDD42CC2BE3EE03004F1038 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDD42CB2BE3EE03004F1038 /* HomeView.swift */; };
 		AEDD42CE2BE3EEC1004F1038 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDD42CD2BE3EEC1004F1038 /* LoginView.swift */; };
 		AEDD43422BE4072E004F1038 /* profilesData.json in Resources */ = {isa = PBXBuildFile; fileRef = AEDD43412BE4072E004F1038 /* profilesData.json */; };
+		AEDD43442BE41DBE004F1038 /* InView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDD43432BE41DBE004F1038 /* InView.swift */; };
+		AEDD43462BE41DCA004F1038 /* OutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDD43452BE41DCA004F1038 /* OutView.swift */; };
+		AEDD43482BE41E5F004F1038 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDD43472BE41E5F004F1038 /* Todo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,9 @@
 		AEDD42CB2BE3EE03004F1038 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AEDD42CD2BE3EEC1004F1038 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AEDD43412BE4072E004F1038 /* profilesData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = profilesData.json; sourceTree = "<group>"; };
+		AEDD43432BE41DBE004F1038 /* InView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InView.swift; sourceTree = "<group>"; };
+		AEDD43452BE41DCA004F1038 /* OutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutView.swift; sourceTree = "<group>"; };
+		AEDD43472BE41E5F004F1038 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,8 @@
 				AEDD42CD2BE3EEC1004F1038 /* LoginView.swift */,
 				AEDD42CB2BE3EE03004F1038 /* HomeView.swift */,
 				AEDD42AF2BE1919E004F1038 /* CheckInOutView.swift */,
+				AEDD43432BE41DBE004F1038 /* InView.swift */,
+				AEDD43452BE41DCA004F1038 /* OutView.swift */,
 				AEDD42B12BE191AA004F1038 /* ManageClimbsView.swift */,
 				AEDD42B32BE191B6004F1038 /* RopeLogView.swift */,
 				AEDD42A92BE18D58004F1038 /* ProfileView.swift */,
@@ -177,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				AEDD42AB2BE18D6C004F1038 /* Profile.swift */,
+				AEDD43472BE41E5F004F1038 /* Todo.swift */,
 				AEDD42B52BE1E890004F1038 /* Climb.swift */,
 				AEDD42B72BE1E901004F1038 /* ModelData.swift */,
 				AEDD42BD2BE1F03D004F1038 /* climbsData.json */,
@@ -338,8 +347,11 @@
 				AEDD42CE2BE3EEC1004F1038 /* LoginView.swift in Sources */,
 				AEDD42AC2BE18D6C004F1038 /* Profile.swift in Sources */,
 				AEDD42AA2BE18D58004F1038 /* ProfileView.swift in Sources */,
+				AEDD43462BE41DCA004F1038 /* OutView.swift in Sources */,
 				AEDD42B62BE1E890004F1038 /* Climb.swift in Sources */,
+				AEDD43442BE41DBE004F1038 /* InView.swift in Sources */,
 				AEDD427F2BE18D34004F1038 /* RockWallAppTestApp.swift in Sources */,
+				AEDD43482BE41E5F004F1038 /* Todo.swift in Sources */,
 				AEDD42B22BE191AA004F1038 /* ManageClimbsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
