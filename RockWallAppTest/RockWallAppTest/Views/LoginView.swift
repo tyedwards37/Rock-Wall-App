@@ -50,11 +50,11 @@ struct LoginView: View {
                 Button(action: {
                     if username == user.username && password == user.password {
                         alertMessage = "Login Successful"
-                        isLoggedIn.toggle()
+                        isLoggedIn = true
                     } else {
                         alertMessage = "Login Failed"
+                        isShowingAlert = true
                     }
-                    isShowingAlert = true
                 }) {
                     Text("Login")
                         .font(.headline)
@@ -71,15 +71,17 @@ struct LoginView: View {
                 Spacer()
             }
             .padding()
+            .navigationBarHidden(isLoggedIn)
             .background(
-                NavigationLink(
-                destination: HomeView(),
-                isActive: $isLoggedIn)
-                { EmptyView() }
+                Color.clear
             )
+            .fullScreenCover(isPresented: $isLoggedIn) {
+                HomeView()
+            }
         }
     }
 }
+
 
 #Preview {
     LoginView(user: Profile(id: 1, name: "John Doe", chapmanID: 2399564, email: "john@chapman.edu", isSetter: false, username: "jDude", password: "iluvclimbing", imageName: "user"))
