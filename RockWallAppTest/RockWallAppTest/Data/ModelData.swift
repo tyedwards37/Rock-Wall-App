@@ -10,6 +10,9 @@ import Foundation
 var climbs: [Climb] = load("climbsData.json")
 var profiles: [Profile] = load("profilesData.json")
 
+var todosOpening: [Todo] = load("openingTasks.json")
+var todosClosing: [Todo] = load("closingTasks.json")
+
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
 

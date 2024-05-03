@@ -56,7 +56,7 @@ struct CheckInOutView: View {
             HStack {
                 Button(action: {checkInActive.toggle() })
                 {
-                    Text("Check-In")
+                    Text("Opening")
                         .font(.headline)
                         .foregroundColor(.white)
                         .padding()
@@ -71,7 +71,7 @@ struct CheckInOutView: View {
                 
                 Button(action: {checkOutActive.toggle() })
                 {
-                    Text("Check-Out")
+                    Text("Closing")
                         .font(.headline)
                         .foregroundColor(.white)
                         .padding()

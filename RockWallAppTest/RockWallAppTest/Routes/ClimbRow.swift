@@ -14,7 +14,7 @@ struct ClimbRow: View {
         HStack {
             Circle()
                 .fill(climb.color)
-                .frame(width: 20, height: 20)
+                .frame(width: 20, height: 40)
             Text(String(climb.id) + " - " + climb.name)
             Spacer()
         }

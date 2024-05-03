@@ -31,6 +31,8 @@
 		AEDD43442BE41DBE004F1038 /* InView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDD43432BE41DBE004F1038 /* InView.swift */; };
 		AEDD43462BE41DCA004F1038 /* OutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDD43452BE41DCA004F1038 /* OutView.swift */; };
 		AEDD43482BE41E5F004F1038 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDD43472BE41E5F004F1038 /* Todo.swift */; };
+		AEDD434A2BE445C4004F1038 /* openingTasks.json in Resources */ = {isa = PBXBuildFile; fileRef = AEDD43492BE445C4004F1038 /* openingTasks.json */; };
+		AEDD434C2BE44D8B004F1038 /* closingTasks.json in Resources */ = {isa = PBXBuildFile; fileRef = AEDD434B2BE44D8B004F1038 /* closingTasks.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		AEDD43432BE41DBE004F1038 /* InView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InView.swift; sourceTree = "<group>"; };
 		AEDD43452BE41DCA004F1038 /* OutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutView.swift; sourceTree = "<group>"; };
 		AEDD43472BE41E5F004F1038 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		AEDD43492BE445C4004F1038 /* openingTasks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = openingTasks.json; sourceTree = "<group>"; };
+		AEDD434B2BE44D8B004F1038 /* closingTasks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = closingTasks.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +194,8 @@
 				AEDD42B72BE1E901004F1038 /* ModelData.swift */,
 				AEDD42BD2BE1F03D004F1038 /* climbsData.json */,
 				AEDD43412BE4072E004F1038 /* profilesData.json */,
+				AEDD43492BE445C4004F1038 /* openingTasks.json */,
+				AEDD434B2BE44D8B004F1038 /* closingTasks.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -308,7 +314,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEDD434A2BE445C4004F1038 /* openingTasks.json in Resources */,
 				AEDD42872BE18D35004F1038 /* Preview Assets.xcassets in Resources */,
+				AEDD434C2BE44D8B004F1038 /* closingTasks.json in Resources */,
 				AEDD42832BE18D35004F1038 /* Assets.xcassets in Resources */,
 				AEDD42BE2BE1F03D004F1038 /* climbsData.json in Resources */,
 				AEDD43422BE4072E004F1038 /* profilesData.json in Resources */,

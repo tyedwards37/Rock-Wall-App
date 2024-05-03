@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
         @State private var isShowingProfilePopup = false
         @State private var selection = 2
-        let user = Profile(id: 1, name: "John Doe", chapmanID: 2399564, email: "john@chapman.edu", isSetter: false, username: "jDude", password: "iluvclimbing", imageName: "user")
+    var user: Profile
         
         var body: some View {
             NavigationView {
@@ -58,5 +58,5 @@ struct HomeView: View {
 
 
 #Preview {
-    HomeView()
+    HomeView(user: Profile(id: 1, name: "John Doe", chapmanID: 2399564, email: "john@chapman.edu", isSetter: false, username: "jDude", password: "iluvclimbing", imageName: "user"))
 }

@@ -14,7 +14,7 @@ struct LoginView: View {
     @State private var alertMessage = ""
     @State private var isLoggedIn = false
     
-    var user: Profile
+    var users: [Profile]
 
     var body: some View {
         NavigationView {
@@ -48,10 +48,16 @@ struct LoginView: View {
                     .padding(.horizontal)
 
                 Button(action: {
-                    if username == user.username && password == user.password {
-                        alertMessage = "Login Successful"
-                        isLoggedIn = true
-                    } else {
+                    var found = false
+                    for user in users {
+                        if username == user.username && password == user.password {
+                            alertMessage = "Login Successful"
+                            isLoggedIn = true
+                            found = true
+                            break
+                        }
+                    }
+                    if !found {
                         alertMessage = "Login Failed"
                         isShowingAlert = true
                     }
@@ -76,7 +82,7 @@ struct LoginView: View {
                 Color.clear
             )
             .fullScreenCover(isPresented: $isLoggedIn) {
-                HomeView()
+                HomeView(user: users.first(where: { $0.username == username })!)
             }
         }
     }
@@ -84,5 +90,7 @@ struct LoginView: View {
 
 
 #Preview {
-    LoginView(user: Profile(id: 1, name: "John Doe", chapmanID: 2399564, email: "john@chapman.edu", isSetter: false, username: "jDude", password: "iluvclimbing", imageName: "user"))
+    LoginView(users: [
+            Profile(id: 1, name: "John Doe", chapmanID: 2399564, email: "john@chapman.edu", isSetter: false, username: "jDude", password: "iluvclimbing", imageName: "user"),
+        ])
 }
