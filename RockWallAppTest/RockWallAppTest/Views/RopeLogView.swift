@@ -15,6 +15,7 @@ struct RopeLogView: View {
     @State private var climbs5 = 0
     @State private var climbs6 = 0
     @State private var date = Date()
+    @State private var isConfirming = false
     @State private var submitted = false
     
     var body: some View {
@@ -89,7 +90,7 @@ struct RopeLogView: View {
                 .padding(.horizontal)
             }
             
-            Button(action: {submitted.toggle() })
+            Button(action: { isConfirming = true })
             {
                 Text("Submit")
                     .font(.headline)
@@ -100,6 +101,11 @@ struct RopeLogView: View {
                     .cornerRadius(15.0)
             }
             .padding()
+            .alert(isPresented: $isConfirming) {
+                Alert(title: Text("Confirm Submission"), message: Text("Are you sure you want to submit?"), primaryButton: .default(Text("Submit")) {
+                    submitted.toggle()
+                }, secondaryButton: .cancel())
+            }
             .alert(isPresented: $submitted) {
                 Alert(title: Text("Rope Log Submitted"), message: Text("\(date)"), dismissButton: .default(Text("OK")))
             }
