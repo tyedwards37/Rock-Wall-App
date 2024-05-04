@@ -9,9 +9,9 @@ The Doti-Struppa Rock Wall App is designed for climbers, employees, and students
 2. People who climb the on-campus rock wall  
 3. Students who are interested in climbing but don’t know what to expect or where to find the wall  
 
+---
 *Comps*
 * Climbing: KAYA  
 * Exercise Tracker: NikeRun Club
-
-*Extra Info*
-[Info Slides] (https://docs.google.com/presentation/d/1jT5UFh-23m39xoyZ2754EC-UfrJaDD1JlTny5QO15c4/edit?usp=sharing)
+ 
+[Info Slides](https://docs.google.com/presentation/d/1jT5UFh-23m39xoyZ2754EC-UfrJaDD1JlTny5QO15c4/edit?usp=sharing)
