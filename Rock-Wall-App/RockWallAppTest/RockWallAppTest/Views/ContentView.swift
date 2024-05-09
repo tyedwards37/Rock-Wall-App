@@ -17,11 +17,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environment(ModelData())
     }
 }
-
-
-/*
-  Ask Prof:
- - why is the profile button on a line of its own
- */

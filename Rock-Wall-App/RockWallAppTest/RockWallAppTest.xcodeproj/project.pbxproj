@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AECCCBEB2BED718A00107EF7 /* TodoRowOpening.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCCBEA2BED718A00107EF7 /* TodoRowOpening.swift */; };
+		AECCCBED2BED719600107EF7 /* TodoRowClosing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCCBEC2BED719600107EF7 /* TodoRowClosing.swift */; };
 		AEDD427F2BE18D34004F1038 /* RockWallAppTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDD427E2BE18D34004F1038 /* RockWallAppTestApp.swift */; };
 		AEDD42812BE18D34004F1038 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDD42802BE18D34004F1038 /* ContentView.swift */; };
 		AEDD42832BE18D35004F1038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEDD42822BE18D35004F1038 /* Assets.xcassets */; };
@@ -53,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AECCCBEA2BED718A00107EF7 /* TodoRowOpening.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRowOpening.swift; sourceTree = "<group>"; };
+		AECCCBEC2BED719600107EF7 /* TodoRowClosing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRowClosing.swift; sourceTree = "<group>"; };
 		AEDD427B2BE18D34004F1038 /* RockWallAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockWallAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEDD427E2BE18D34004F1038 /* RockWallAppTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockWallAppTestApp.swift; sourceTree = "<group>"; };
 		AEDD42802BE18D34004F1038 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +114,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AECCCBE52BED68D700107EF7 /* Checklist */ = {
+			isa = PBXGroup;
+			children = (
+				AEDD43432BE41DBE004F1038 /* InView.swift */,
+				AEDD43452BE41DCA004F1038 /* OutView.swift */,
+				AECCCBEC2BED719600107EF7 /* TodoRowClosing.swift */,
+				AECCCBEA2BED718A00107EF7 /* TodoRowOpening.swift */,
+			);
+			path = Checklist;
+			sourceTree = "<group>";
+		};
 		AEDD42722BE18D34004F1038 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +151,7 @@
 				AEDD427E2BE18D34004F1038 /* RockWallAppTestApp.swift */,
 				AEDD42C32BE1FF65004F1038 /* Views */,
 				AEDD42C52BE1FFA8004F1038 /* Routes */,
+				AECCCBE52BED68D700107EF7 /* Checklist */,
 				AEDD42C42BE1FF8A004F1038 /* Data */,
 				AEDD42822BE18D35004F1038 /* Assets.xcassets */,
 				AEDD42842BE18D35004F1038 /* RockWallAppTest.entitlements */,
@@ -176,8 +192,6 @@
 				AEDD42CD2BE3EEC1004F1038 /* LoginView.swift */,
 				AEDD42CB2BE3EE03004F1038 /* HomeView.swift */,
 				AEDD42AF2BE1919E004F1038 /* CheckInOutView.swift */,
-				AEDD43432BE41DBE004F1038 /* InView.swift */,
-				AEDD43452BE41DCA004F1038 /* OutView.swift */,
 				AEDD42B12BE191AA004F1038 /* ManageClimbsView.swift */,
 				AEDD42B32BE191B6004F1038 /* RopeLogView.swift */,
 				AEDD42A92BE18D58004F1038 /* ProfileView.swift */,
@@ -355,10 +369,12 @@
 				AEDD42CE2BE3EEC1004F1038 /* LoginView.swift in Sources */,
 				AEDD42AC2BE18D6C004F1038 /* Profile.swift in Sources */,
 				AEDD42AA2BE18D58004F1038 /* ProfileView.swift in Sources */,
+				AECCCBED2BED719600107EF7 /* TodoRowClosing.swift in Sources */,
 				AEDD43462BE41DCA004F1038 /* OutView.swift in Sources */,
 				AEDD42B62BE1E890004F1038 /* Climb.swift in Sources */,
 				AEDD43442BE41DBE004F1038 /* InView.swift in Sources */,
 				AEDD427F2BE18D34004F1038 /* RockWallAppTestApp.swift in Sources */,
+				AECCCBEB2BED718A00107EF7 /* TodoRowOpening.swift in Sources */,
 				AEDD43482BE41E5F004F1038 /* Todo.swift in Sources */,
 				AEDD42B22BE191AA004F1038 /* ManageClimbsView.swift in Sources */,
 			);
