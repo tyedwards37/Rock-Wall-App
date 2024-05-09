@@ -1,0 +1,104 @@
+[
+        {
+            "id": 1,
+            "name": "ASSESS RECEPTION ROOM",
+            "category": "arrow.down.square.fill",
+            "isDone": false
+        },
+        {
+            "id": 2, 
+            "name": "Turn on lights and computers",
+            "category": "lightbulb.max",
+            "isDone": false
+        },
+        {
+            "id": 3, 
+            "name": "Ensure Fusion is operating correctly to ensure guests have completed the Wellness and Recreation waiver",
+            "category": "lock.open.desktopcomputer", 
+            "isDone": false
+        },
+        {
+            "id": 4, 
+            "name": "Clear reception area of any leftover trash",
+            "category": "trash.slash.square", 
+            "isDone": false
+        },
+        {
+            "id": 5, 
+            "name": "Arrange desks and furniture to present a clean and organized environment",
+            "category": "table.furniture",
+            "isDone": false
+        },
+        {
+            "id": 6, 
+            "name": "ASSESS THE CLIMBING ROOM",
+            "category": "arrow.down.square.fill",
+            "isDone": false
+        },
+        {
+            "id": 7, 
+            "name": "Turn on lights",
+            "category": "lightbulb.max",
+            "isDone": false
+        },
+        {
+            "id": 8, 
+            "name": "Identify visible damage to the wall and/or holds. Report damage to Lead Rock Wall Assistant and Facility Manager",
+            "category": "bandage",
+            "isDone": false
+        },
+        {
+            "id": 9, 
+            "name": "Ensure Rock Wall signage is displayed and up to date",
+            "category": "signpost.left", 
+            "isDone": false
+        },
+        {
+            "id": 10, 
+            "name": "Ensure floor of climbing area is clear, clean, and dry",
+            "category": "bubbles.and.sparkles",
+            "isDone": false
+        },
+        {
+            "id": 11, 
+            "name": "ASSESS ALL EQUIPTMENT",
+            "category": "arrow.down.square.fill",
+            "isDone": false
+        },
+        {
+            "id": 12, 
+            "name": "Confirm ropes are correctly routed through and not crossing atop the anchor points",
+            "category": "lasso",
+            "isDone": false
+        },
+        {
+            "id": 13, 
+            "name": "Confirm grigris are in good condition and that the locking mechanisms open and close fully and smoothly",
+            "category": "lock.trianglebadge.exclamationmark",
+            "isDone": false
+        },
+        {
+            "id": 14, 
+            "name": "Ensure carabiner locking mechanisms are functioning correctly",
+            "category": "lock.trianglebadge.exclamationmark",
+            "isDone": false
+        },
+        {
+            "id": 15, 
+            "name": "Confirm there are no cracks in helmets or tears in the tightening belts or interior fabric",
+            "category": "exclamationmark.triangle",
+            "isDone": false
+        },
+        {
+            "id": 16, 
+            "name": "Ensure climbing shoes are not damaged with any holes or tears",
+            "category": "shoe.circle", 
+            "isDone": false
+        },
+        {
+            "id": 17, 
+            "name": "Ensure harnesses, including loop threads, are not damaged with any holes or tears",
+            "category": "exclamationmark.triangle", 
+            "isDone": false
+        }
+]

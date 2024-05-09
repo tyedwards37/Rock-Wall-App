@@ -1,0 +1,46 @@
+{
+    "climbs": [
+        {
+            "id": 1,
+            "name": "Example1",
+            "color": "Color1",
+            "difficulty": "Easy",
+            "setter": "Jaden"
+        },
+        {
+            "id": 2,
+            "name": "Example2",
+            "color": "Color2",
+            "difficulty": "Easy",
+            "setter": "Jaden"
+        },
+        {
+            "id": 3,
+            "name": "Example3",
+            "color": "Color3",
+            "difficulty": "Easy",
+            "setter": "Jaden"
+        },
+        {
+            "id": 4,
+            "name": "Example4",
+            "color": "Color4",
+            "difficulty": "Easy",
+            "setter": "Jaden"
+        },
+        {
+            "id": 5,
+            "name": "Example5",
+            "color": "Color5",
+            "difficulty": "Easy",
+            "setter": "Jaden"
+        },
+        {
+            "id": 6,
+            "name": "Example6",
+            "color": "Color6",
+            "difficulty": "Easy",
+            "setter": "Jaden"
+        }
+    ]
+}
