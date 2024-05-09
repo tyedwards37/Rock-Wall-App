@@ -1,0 +1,33 @@
+[
+        {
+            "id": 1,
+            "name": "John Doe",
+            "chapmanID": 1234567,
+            "email": "jdoe@chapman.edu",
+            "isSetter": false,
+            "username": "jDude",
+            "password": "iluvclimbing",
+            "imageName": "user"
+        },
+        {
+            "id": 2,
+            "name": "Tyler Edwards",
+            "chapmanID": 2399564,
+            "email": "tyedwards@chapman.edu",
+            "isSetter": false,
+            "username": "tyler1",
+            "password": "bestbelays",
+            "imageName": "user"
+        },
+        {
+            "id": 3,
+            "name": "Jaden Johnson",
+            "chapmanID": 2405823,
+            "email": "jadjohnson@chapman.edu",
+            "isSetter": true,
+            "username": "BigDawg12",
+            "password": "mobilegamer",
+            "imageName": "user"
+        }
+
+]
