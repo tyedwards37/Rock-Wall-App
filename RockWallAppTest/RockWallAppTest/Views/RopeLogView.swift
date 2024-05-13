@@ -4,7 +4,7 @@ enum AlertType: Identifiable {
     case confirmation
     case submissionSuccess
     
-    var id: Int {
+    var id: Int { // needed to allow for double alert
         hashValue
     }
 }
@@ -45,7 +45,7 @@ struct RopeLogView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, 16)
                 .padding(.top, 10)
-
+                
                 VStack(alignment: .trailing) {
                     ForEach(climbs.indices, id: \.self) { index in
                         Stepper(value: $climbs[index].climbCount, in: 0...40) {
@@ -60,7 +60,7 @@ struct RopeLogView: View {
             Button(action: {
                 self.alertType = .confirmation
                 print("DEBUG: Submit tapped")
-            }) {
+            }) { // TODO: Save stepper data in database so manager can check along with head staff
                 Text("Submit")
                     .font(.headline)
                     .foregroundColor(.white)
@@ -70,7 +70,7 @@ struct RopeLogView: View {
                     .cornerRadius(15.0)
             }
         }
-        .alert(item: $alertType) { alertType in
+        .alert(item: $alertType) { alertType in // double alert setup
             switch alertType {
             case .confirmation:
                 return Alert(

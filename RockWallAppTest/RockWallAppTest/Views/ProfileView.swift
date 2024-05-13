@@ -47,7 +47,7 @@ struct ProfileView: View {
                     Text("Log out")
                         .foregroundColor(.white)
                         .font(.title)
-                }
+                } // As with login, user .fullScreenCover instead of changing views since the profile isn't really a "view", rather just a tab
                 .padding(10)
                 .background(Color.red)
                 .cornerRadius(10)

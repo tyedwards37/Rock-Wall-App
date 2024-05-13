@@ -12,7 +12,7 @@ struct HomeView: View {
         @State private var selection = 2
     var user: Profile
         
-        var body: some View {
+        var body: some View { // bottom tab, user can select option
             NavigationView {
                 GeometryReader { geometry in
                     VStack {
@@ -48,7 +48,7 @@ struct HomeView: View {
                             }
                         }
                     }
-                }
+                } // if profile button selected, prompt profile popup
                 .sheet(isPresented: $isShowingProfilePopup) {
                     ProfileView(user: user)
                 }

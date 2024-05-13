@@ -16,6 +16,7 @@ struct LoginView: View {
     
     var users: [Profile]
 
+    // Prompt user for login information
     var body: some View {
         NavigationView {
             VStack {
@@ -47,7 +48,7 @@ struct LoginView: View {
                     .cornerRadius(5.0)
                     .padding(.horizontal)
 
-                Button(action: {
+                Button(action: { // successful login
                     var found = false
                     for user in users {
                         if username == user.username && password == user.password {
@@ -57,7 +58,7 @@ struct LoginView: View {
                             break
                         }
                     }
-                    if !found {
+                    if !found { // unsuccessful login
                         alertMessage = "Login Failed"
                         isShowingAlert = true
                     }
@@ -83,8 +84,8 @@ struct LoginView: View {
             )
             .fullScreenCover(isPresented: $isLoggedIn) {
                 HomeView(user: users.first(where: { $0.username == username })!)
-            }
-        }
+            } // error with switching views, instead place view in background
+        } // and allow HomeView to come up to front
     }
 }
 

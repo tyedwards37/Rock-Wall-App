@@ -8,10 +8,8 @@
 import SwiftUI
 
 struct CheckInOutView: View {
-    @State private var rwa1 = ""
-    @State private var rwa2 = ""
-    @State private var rwa3 = ""
-    @State private var rwa4 = ""
+    @State private var rwas = ["RWA 1", "RWA 2", "RWA 3", "RWA 4"] // can be changed later based on # of staff working at the wall
+    @State private var rwaValues = ["", "", "", ""]
     @State private var date = Date()
     @State private var checkInActive = false
     @State private var checkOutActive = false
@@ -22,33 +20,15 @@ struct CheckInOutView: View {
                 .font(.title)
                 .bold()
             
-            TextField("RWA 1", text: $rwa1)
-                .autocapitalization(.none)
-                .padding()
-                .background(Color(UIColor.systemGray6))
-                .cornerRadius(5.0)
-            .padding(.horizontal)
-            
-            TextField("RWA 2", text: $rwa2)
-                .autocapitalization(.none)
-                .padding()
-                .background(Color(UIColor.systemGray6))
-                .cornerRadius(5.0)
-            .padding(.horizontal)
-
-            TextField("RWA 3", text: $rwa3)
-                .autocapitalization(.none)
-                .padding()
-                .background(Color(UIColor.systemGray6))
-                .cornerRadius(5.0)
-            .padding(.horizontal)
-
-            TextField("RWA 4", text: $rwa4)
-                .autocapitalization(.none)
-                .padding()
-                .background(Color(UIColor.systemGray6))
-                .cornerRadius(5.0)
-            .padding(.horizontal)
+            // go through staff and place a textbox for them
+            ForEach(0..<rwas.count, id: \.self) { index in
+                TextField(rwas[index], text: $rwaValues[index])
+                    .autocapitalization(.none)
+                    .padding()
+                    .background(Color(UIColor.systemGray6))
+                    .cornerRadius(5.0)
+                    .padding(.horizontal)
+            }
             
             DatePicker(selection: .constant(date), label: { Text("Day:") })
                 .padding(.horizontal)
@@ -69,6 +49,7 @@ struct CheckInOutView: View {
                     NavigationLink(destination: InView(), isActive: $checkInActive) {EmptyView()}
                 )
                 
+                //TODO: Need to allow app to save data in database of tasks that were successfully completed/not completed
                 Button(action: {checkOutActive.toggle() })
                 {
                     Text("Closing")

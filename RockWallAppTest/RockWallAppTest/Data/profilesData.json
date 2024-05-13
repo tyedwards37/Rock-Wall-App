@@ -28,6 +28,15 @@
             "username": "BigDawg12",
             "password": "mobilegamer",
             "imageName": "user"
-        }
-
+        },
+        {
+            "id": 4,
+            "name": "Big Bussin",
+            "chapmanID": 2405823,
+            "email": "BussinBus@chapman.edu",
+            "isSetter": true,
+            "username": "Dilemma25",
+            "password": "DontTouchMyAccountBeotch",
+            "imageName": "user"
+        },
 ]
