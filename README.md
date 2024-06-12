@@ -1,4 +1,4 @@
-# Rock-Wall-App (Campus)
+# Rock-Wall-App (Campusing)
 
 ## Summary
 
